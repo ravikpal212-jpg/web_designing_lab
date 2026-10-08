@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><title>Q21 Callback & Async</title></head>
+<body><h2>Callback and Asynchronous setTimeout</h2>
+<button onclick="start()">Start</button><p id="result"></p>
+<script>
+function greet(name,callback){
+ setTimeout(()=>callback("Hello, "+name+"!"),2000);
+}
+function start(){
+ document.getElementById("result").textContent="Waiting 2 seconds...";
+ greet("Ravi",message=>{
+  document.getElementById("result").textContent=message;
+ });
+}
+</script></body></html>

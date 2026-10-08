@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><title>Q16 Image Gallery</title><style>
+img{width:350px;height:220px;object-fit:cover;display:block;margin-bottom:15px}
+button{padding:8px 20px}
+</style></head>
+<body><h2>Image Gallery Slider</h2>
+<img id="image" src="https://picsum.photos/id/1015/350/220">
+<button id="prev">Previous</button><button id="next">Next</button>
+<script>
+let images=[
+"https://picsum.photos/id/1015/350/220",
+"https://picsum.photos/id/1016/350/220",
+"https://picsum.photos/id/1025/350/220"
+];
+let index=0;
+function show(){document.getElementById("image").src=images[index];}
+document.getElementById("next").onclick=()=>{index=(index+1)%images.length;show()};
+document.getElementById("prev").onclick=()=>{index=(index-1+images.length)%images.length;show()};
+</script></body></html>

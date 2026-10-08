@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><title>Q10 Password Validation</title></head>
+<body><h2>Password Validation</h2>
+<form id="form">
+<input id="password" type="password" placeholder="Password"><br><br>
+<input id="confirm" type="password" placeholder="Confirm Password"><br><br>
+<button>Submit</button><p id="msg"></p>
+</form>
+<script>
+document.getElementById("form").addEventListener("submit",function(e){
+ e.preventDefault();
+ let p=document.getElementById("password").value;
+ let c=document.getElementById("confirm").value;
+ document.getElementById("msg").textContent=p===c?"Passwords match":"Passwords do not match";
+});
+</script></body></html>

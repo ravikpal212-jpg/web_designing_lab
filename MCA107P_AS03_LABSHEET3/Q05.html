@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><head><title>Q5 Reverse Palindrome</title></head>
+<body>
+<h2>Reverse String & Palindrome</h2>
+<input id="text" placeholder="Enter string">
+<button onclick="check()">Check</button>
+<div id="result"></div>
+<script>
+function check(){
+ let s=document.getElementById("text").value;
+ let r=s.split("").reverse().join("");
+ document.getElementById("result").innerHTML="Reverse: "+r+"<br>"+(s.toLowerCase()===r.toLowerCase()?"Palindrome":"Not a palindrome");
+}
+</script></body></html>

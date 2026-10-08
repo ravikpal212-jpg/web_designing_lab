@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><title>Q18 Todo List</title></head>
+<body><h2>Todo List</h2>
+<input id="task" placeholder="Enter task"><button onclick="addTask()">Add</button>
+<ul id="list"></ul>
+<script>
+function addTask(){
+ let text=document.getElementById("task").value;
+ if(!text)return;
+ let li=document.createElement("li");
+ li.textContent=text+" ";
+ let btn=document.createElement("button");
+ btn.textContent="Delete";
+ btn.onclick=()=>li.remove();
+ li.appendChild(btn);
+ document.getElementById("list").appendChild(li);
+ document.getElementById("task").value="";
+}
+</script></body></html>

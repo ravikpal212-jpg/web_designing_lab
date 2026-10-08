@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head><title>Q3 Student Grade</title></head>
+<body>
+<h2>Student Grade</h2>
+<input id="marks" type="number" placeholder="Marks (0-100)">
+<button onclick="grade()">Find Grade</button>
+<div id="result"></div>
+<script>
+function grade(){
+ let m=Number(document.getElementById("marks").value), g;
+ if(m<0 || m>100) g="Invalid marks";
+ else {
+  switch(Math.floor(m/10)){
+   case 10: case 9: g="A"; break;
+   case 8: g="B"; break;
+   case 7: g="C"; break;
+   case 6: g="D"; break;
+   default: g="F";
+  }
+ }
+ document.getElementById("result").innerHTML="Grade: "+g;
+}
+</script></body></html>

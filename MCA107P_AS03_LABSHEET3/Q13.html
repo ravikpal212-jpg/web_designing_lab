@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><title>Q13 Closure Counter</title></head>
+<body><h2>Private Counter Using Closure</h2>
+<button id="inc">Increment</button><button id="dec">Decrement</button>
+<p id="count">0</p>
+<script>
+function counter(){
+ let count=0;
+ return {
+  increment:()=>++count,
+  decrement:()=>--count,
+  value:()=>count
+ };
+}
+let c=counter();
+function show(){document.getElementById("count").textContent=c.value();}
+document.getElementById("inc").onclick=()=>{c.increment();show()};
+document.getElementById("dec").onclick=()=>{c.decrement();show()};
+</script></body></html>

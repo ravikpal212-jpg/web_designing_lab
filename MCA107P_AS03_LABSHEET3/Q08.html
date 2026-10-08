@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><title>Q8 Calculator</title><style>
+button{width:60px;height:40px;margin:3px}#display{width:250px;padding:10px;font-size:20px}
+</style></head>
+<body><h2>Calculator</h2>
+<input id="display" readonly><br>
+<button>7</button><button>8</button><button>9</button><button>/</button><br>
+<button>4</button><button>5</button><button>6</button><button>*</button><br>
+<button>1</button><button>2</button><button>3</button><button>-</button><br>
+<button>0</button><button>.</button><button>=</button><button>+</button><br>
+<button>C</button>
+<script>
+const d=document.getElementById("display");
+document.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+ if(b.textContent==="C") d.value="";
+ else if(b.textContent==="="){try{d.value=eval(d.value)}catch(e){d.value="Error"}}
+ else d.value+=b.textContent;
+}));
+</script></body></html>

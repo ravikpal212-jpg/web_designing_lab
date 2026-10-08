@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>Q7 Student Object</title></head>
+<body><h2>Student Object</h2><div id="result"></div>
+<script>
+let student={
+ name:"Ravi",
+ course:"MCA",
+ marks:85,
+ show:function(){return "Name: "+this.name+"<br>Course: "+this.course+"<br>Marks: "+this.marks;}
+};
+document.getElementById("result").innerHTML=student.show();
+</script></body></html>

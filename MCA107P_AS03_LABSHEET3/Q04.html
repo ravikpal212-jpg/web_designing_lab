@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><head><title>Q4 Fibonacci</title></head>
+<body>
+<h2>Fibonacci Series</h2>
+<input id="n" type="number" placeholder="Number of terms">
+<button onclick="generate()">Generate</button>
+<div id="result"></div>
+<script>
+function generate(){
+ let n=Number(document.getElementById("n").value), a=0,b=1,s=[];
+ for(let i=0;i<n;i++){s.push(a); [a,b]=[b,a+b];}
+ document.getElementById("result").innerHTML=s.join(", ");
+}
+</script></body></html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>Q9 Dynamic DOM</title></head>
+<body><h2>Add DOM Elements</h2>
+<input id="text" placeholder="Enter text"><button id="add">Add</button>
+<div id="list"></div>
+<script>
+document.getElementById("add").addEventListener("click",()=>{
+ let p=document.createElement("p");
+ p.textContent=document.getElementById("text").value;
+ document.getElementById("list").appendChild(p);
+});
+</script></body></html>

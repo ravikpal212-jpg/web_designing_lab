@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><title>Q6 Array Methods</title></head>
+<body>
+<h2>Array Manipulation</h2>
+<p id="result"></p>
+<script>
+let arr=[30,10,50,20,40];
+arr.push(60);
+arr.pop();
+let doubled=arr.map(x=>x*2);
+let filtered=arr.filter(x=>x>=30);
+let sorted=[...arr].sort((a,b)=>a-b);
+document.getElementById("result").innerHTML=
+"Original: 30,10,50,20,40<br>After push/pop: "+arr+
+"<br>Sorted: "+sorted+
+"<br>Mapped (x2): "+doubled+
+"<br>Filtered (>=30): "+filtered;
+</script></body></html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><head><title>Q14 JSON Exception Handling</title></head>
+<body><h2>JSON Parsing with try-catch-finally</h2><div id="result"></div>
+<script>
+let json='{"name":"Ravi","course":"MCA"}';
+try{
+ let obj=JSON.parse(json);
+ document.getElementById("result").textContent="Name: "+obj.name+", Course: "+obj.course;
+}catch(error){
+ document.getElementById("result").textContent="Invalid JSON: "+error.message;
+}finally{
+ console.log("JSON parsing completed.");
+}
+</script></body></html>

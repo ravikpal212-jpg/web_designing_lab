@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><head><title>Q19 Keyboard Events</title></head>
+<body><h2>Keyboard Event Capture</h2>
+<input id="input" placeholder="Press any key">
+<p id="result"></p>
+<script>
+let input=document.getElementById("input");
+input.addEventListener("keydown",e=>{
+ document.getElementById("result").textContent="Keydown - Key: "+e.key+" | Code: "+e.code;
+});
+input.addEventListener("keyup",e=>{
+ document.getElementById("result").textContent+=" | Keyup: "+e.key;
+});
+</script></body></html>

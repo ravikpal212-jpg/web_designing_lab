@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>Q17 Vowel Counter</title></head>
+<body><h2>Vowel Counter</h2>
+<textarea id="text" placeholder="Enter paragraph"></textarea><br>
+<button onclick="countVowels()">Count Vowels</button><p id="result"></p>
+<script>
+function countVowels(){
+ let s=document.getElementById("text").value.toLowerCase();
+ let count=(s.match(/[aeiou]/g)||[]).length;
+ document.getElementById("result").textContent="Total vowels: "+count;
+}
+</script></body></html>

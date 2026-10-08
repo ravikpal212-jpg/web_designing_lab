@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>Q12 Digital Clock</title><style>
+#clock{font-size:40px;font-family:Arial}
+</style></head>
+<body><h2>Digital Clock</h2><div id="clock"></div>
+<script>
+function clock(){
+ document.getElementById("clock").textContent=new Date().toLocaleTimeString();
+}
+clock();
+setInterval(clock,1000);
+</script></body></html>

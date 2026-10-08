@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html><head><title>Q11 Mouse Events</title><style>
+#box{width:250px;height:120px;background:lightblue;padding:30px;text-align:center}
+</style></head>
+<body><h2>Mouseover & Mouseout</h2><div id="box">Move mouse here</div>
+<script>
+let box=document.getElementById("box");
+box.addEventListener("mouseover",()=>box.style.backgroundColor="orange");
+box.addEventListener("mouseout",()=>box.style.backgroundColor="lightblue");
+</script></body></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><title>Q2 Prime or Composite</title></head>
+<body>
+<h2>Prime or Composite</h2>
+<input id="num" type="number" placeholder="Enter number">
+<button onclick="check()">Check</button>
+<div id="result"></div>
+<script>
+function check(){
+ let n=Number(document.getElementById("num").value), prime=true;
+ if(n<2) prime=false;
+ for(let i=2;i<=Math.sqrt(n);i++) if(n%i===0){prime=false;break;}
+ document.getElementById("result").innerHTML =
+ n<2 ? "Neither prime nor composite" : (prime ? "Prime number" : "Composite number");
+}
+</script></body></html>
