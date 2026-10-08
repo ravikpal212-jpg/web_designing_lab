@@ -1,0 +1,14 @@
+.box {
+    width: 350px;
+    margin: 80px auto;
+    font-family: Arial
+}
+
+.box input[type=range] {
+    width: 250px
+}
+
+.box input[type=number] {
+    width: 70px;
+    padding: 7px
+}

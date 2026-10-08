@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+    padding: 40px
+}
+
+input {
+    display: none
+}
+
+label {
+    display: block;
+    margin: 15px;
+    position: relative
+}
+
+label::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #222;
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+input:checked+label::after {
+    content: "✓";
+    position: absolute;
+    margin-left: -25px
+}
+
+.radio::before {
+    border-radius: 50%
+}

@@ -1,0 +1,14 @@
+form {
+    width: 300px;
+    margin: 50px auto;
+    font-family: Arial
+}
+
+input {
+    padding: 8px;
+    margin: 10px
+}
+
+button {
+    padding: 8px 20px
+}

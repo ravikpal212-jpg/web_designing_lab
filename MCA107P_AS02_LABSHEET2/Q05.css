@@ -1,0 +1,24 @@
+body {
+    background: #eee;
+    font-family: Arial
+}
+
+.card {
+    width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #999;
+    position: relative
+}
+
+.card input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0
+}
+
+.card button {
+    padding: 10px 30px
+}

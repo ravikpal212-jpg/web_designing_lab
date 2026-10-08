@@ -1,0 +1,27 @@
+.container {
+    width: 600px;
+    margin: auto;
+    font-family: Arial
+}
+
+.container label {
+    float: left;
+    width: 200px;
+    margin: 10px 0
+}
+
+.container input,
+.container select {
+    float: left;
+    width: 250px;
+    margin: 8px 0;
+    padding: 7px
+}
+
+.clear {
+    clear: both
+}
+
+.container button {
+    padding: 8px 25px
+}

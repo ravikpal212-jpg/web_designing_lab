@@ -1,0 +1,19 @@
+form {
+    width: 500px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    font-family: Arial
+}
+
+input,
+select {
+    padding: 8px
+}
+
+button {
+    grid-column: 2;
+    width: 100px;
+    padding: 8px
+}

@@ -1,0 +1,17 @@
+body {
+    padding: 80px;
+    font-family: Arial
+}
+
+input {
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #777;
+    transition: width .5s
+}
+
+input:focus {
+    width: 350px;
+    outline: 2px solid #5aa
+}

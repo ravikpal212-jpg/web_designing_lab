@@ -1,0 +1,23 @@
+.header {
+    height: 80px;
+    background: lightblue;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box
+}
+
+.main {
+    display: flex;
+    height: 400px
+}
+
+.nav {
+    width: 25%;
+    background: #ddd;
+    padding: 20px
+}
+
+.content {
+    flex: 1;
+    padding: 20px
+}

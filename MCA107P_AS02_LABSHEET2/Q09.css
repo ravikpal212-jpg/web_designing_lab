@@ -1,0 +1,22 @@
+form {
+    width: 400px;
+    margin: 40px auto;
+    font-family: Arial
+}
+
+fieldset {
+    padding: 20px;
+    margin-bottom: 20px
+}
+
+legend {
+    font-weight: bold
+}
+
+input {
+    margin: 8px
+}
+
+button {
+    padding: 8px 25px
+}

@@ -1,0 +1,26 @@
+form {
+    width: 500px;
+    margin: 40px auto;
+    font-family: Arial
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box
+}
+
+button {
+    padding: 10px 25px
+}
+
+@media(max-width:600px) {
+    form {
+        width: 90%
+    }
+
+    input {
+        width: 95%
+    }
+}

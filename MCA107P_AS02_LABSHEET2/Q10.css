@@ -1,0 +1,24 @@
+table {
+    width: 600px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-family: Arial
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #000
+}
+
+tr:nth-child(even) {
+    background: #eee
+}
+
+tr:hover {
+    background: lightblue
+}
+
+input {
+    width: 90%
+}

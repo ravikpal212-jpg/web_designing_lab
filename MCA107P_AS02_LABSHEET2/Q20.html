@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q20 Onboarding</title>
+    <link rel="stylesheet" href="Q20.css">
+    <script>
+        function next(n) { for (let i = 1; i <= 3; i++)document.getElementById("step" + i).style.display = "none"; document.getElementById("step" + n).style.display = "block"; }
+    </script>
+</head>
+
+<body>
+    <div class="step">
+        <div id="step1">
+            <h2>Step 1</h2><input placeholder="Enter your name"><br><br><button onclick="next(2)">Next</button>
+        </div>
+        <div id="step2">
+            <h2>Step 2</h2><input type="email" placeholder="Enter email"><br><br><button
+                onclick="next(1)">Back</button><button onclick="next(3)">Next</button>
+        </div>
+        <div id="step3">
+            <h2>Step 3</h2><input type="password" placeholder="Password"><br><br><button
+                onclick="next(2)">Back</button><button>Finish</button>
+        </div>
+    </div>
+</body>
+
+</html>

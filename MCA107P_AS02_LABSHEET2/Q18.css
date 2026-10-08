@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    font-family: Arial
+}
+
+.form,
+.location {
+    flex: 1;
+    padding: 25px;
+    background: #eee
+}
+
+.form input,
+.form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px
+}
+
+.form textarea {
+    height: 80px
+}
+
+.form button {
+    padding: 10px 30px
+}
+
+@media(max-width:600px) {
+    .container {
+        flex-direction: column
+    }
+}
