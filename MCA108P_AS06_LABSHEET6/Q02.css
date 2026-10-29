@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{margin:0;font:16px Arial,sans-serif;color:#222}header,footer{padding:20px;background:#172554;color:white}nav,.cards{display:flex;gap:16px;flex-wrap:wrap}nav a{color:white;text-decoration:none;padding:6px}.cards article{flex:1 1 220px;padding:20px;border:1px solid #ddd;border-radius:10px}
