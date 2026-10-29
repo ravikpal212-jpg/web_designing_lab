@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+ ServerName myproject.local
+ DocumentRoot "C:/xampp/htdocs/myproject/public"
+ <Directory "C:/xampp/htdocs/myproject/public">
+  Require all granted
+ </Directory>
+</VirtualHost>
+
+# Add to C:\Windows\System32\drivers\etc\hosts as Administrator:
+127.0.0.1 myproject.local
+# Restart Apache after changing configuration.

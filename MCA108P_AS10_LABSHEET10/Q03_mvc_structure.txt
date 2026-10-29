@@ -1,0 +1,11 @@
+project/
+├── models/
+│   └── Product.php
+├── views/
+│   └── products.php
+├── controllers/
+│   └── ProductController.php
+├── public/
+│   └── index.php
+└── config/
+    └── database.php

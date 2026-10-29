@@ -1,0 +1,14 @@
+git switch -c feature/header
+# Edit a file and commit:
+git add .
+git commit -m "Add header feature"
+git switch main
+# Edit the same lines differently on main and commit:
+git add .
+git commit -m "Update main header"
+git merge feature/header
+# Resolve conflict markers in the affected file, then:
+git add .
+git commit -m "Resolve merge conflict"
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git push -u origin main

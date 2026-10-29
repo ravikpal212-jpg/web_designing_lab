@@ -1,0 +1,9 @@
+const slides=[...document.querySelectorAll(".slide")],dotsBox=document.querySelector(".dots");let current=0;
+slides.forEach((_,i)=>{const d=document.createElement("button");d.className="dot"+(i===0?" active":"");d.setAttribute("aria-label","Show slide "+(i+1));d.onclick=()=>show(i);dotsBox.appendChild(d)});
+const dots=[...document.querySelectorAll(".dot")];
+function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle("active",n===current));dots.forEach((d,n)=>d.classList.toggle("active",n===current))}
+document.querySelector(".next").onclick=()=>show(current+1);document.querySelector(".prev").onclick=()=>show(current-1);
+setInterval(()=>show(current+1),6000);
+document.getElementById("menuBtn").onclick=()=>{const n=document.getElementById("navLinks"),b=document.getElementById("menuBtn");n.classList.toggle("open");b.setAttribute("aria-expanded",n.classList.contains("open"))};
+document.getElementById("bookingForm").addEventListener("submit",e=>{e.preventDefault();const name=document.getElementById("name"),email=document.getElementById("email"),date=document.getElementById("date"),guests=document.getElementById("guests"),msg=document.getElementById("formMessage");msg.className="";if(name.value.trim().length<2){msg.textContent="Please enter your name.";msg.className="error";name.focus();return}if(!email.validity.valid){msg.textContent="Please enter a valid email.";msg.className="error";email.focus();return}if(!date.value){msg.textContent="Please choose a date.";msg.className="error";date.focus();return}if(+guests.value<1||+guests.value>12){msg.textContent="Guests must be between 1 and 12.";msg.className="error";guests.focus();return}msg.textContent="Reservation request submitted successfully.";});
+document.querySelectorAll(".stars").forEach(el=>el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();alert("Rating: "+el.dataset.rating+" out of 5")}}));

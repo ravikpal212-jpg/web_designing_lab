@@ -1,0 +1,6 @@
+RewriteEngine On
+Options -Indexes
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteRule ^products/?$ public/products.php [L]
+# Requires mod_rewrite and HTTPS to be configured in Apache.

@@ -1,0 +1,6 @@
+# In Apache httpd-ssl.conf, configure certificate paths:
+SSLEngine on
+SSLCertificateFile "conf/ssl.crt/server.crt"
+SSLCertificateKeyFile "conf/ssl.key/server.key"
+# Enable mod_ssl and Listen 443, then restart Apache.
+# A self-signed certificate will cause a browser warning on local testing.

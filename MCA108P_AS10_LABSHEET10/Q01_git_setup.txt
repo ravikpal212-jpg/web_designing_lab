@@ -1,0 +1,8 @@
+git init
+echo .env>>.gitignore
+echo /vendor/>>.gitignore
+echo *.log>>.gitignore
+git add .
+git commit -m "Initial project commit"
+# If prompted: git config --global user.name "Your Name"
+# git config --global user.email "you@example.com"
