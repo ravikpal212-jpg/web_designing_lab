@@ -1,0 +1,5 @@
+mysql-connector-python
+PyMySQL
+SQLAlchemy
+Flask
+mod_wsgi
